@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
+:root {
+  --fontColor: #ffffff;
+  --fontColorHover: #2e1c2b;
+  --backgroundColor: #ffff;
+  --headerGradientColor: #000000, #025c86, #02081f, #10021f, #10021f, #02081f ;
+  --neonColor: rgb(255, 249, 158);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Amatic SC", sans-serif;
+  color: #ffff;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: red;
+  background: linear-gradient(-45deg, var(--headerGradientColor));
+  background-size: 400% 400%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  animation: backgroundWave 15s ease-in-out infinite;
+}
+
+#tittle {
+  font-size: 60px;
+  min-width: 314.34px;
+  margin-bottom: 10px;
+  animation: neon 3s alternate infinite ease-in-out;
+}
+
+#wrapper {
+  width: 60vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+#text-box {
+  width: 59%;
+  min-width: 240.77px;
+  color: var(--fontColorHover);
+  font-size: 30px;
+  background-color: #ffffffe0;
+  border-radius: 2px;
+  border: 2px solid var(--fontColor);
+}
+
+#button {
+  color: var(--fontColor);
+  font-size: 30px;
+  width: 19%;
+  min-width: 76px;
+  height: 50px;
+  margin-left: 10px;
+  background: none;
+  border-radius: 5px;
+  border: 1px solid var(--fontColor);
+  animation: miniNeon 20s alternate infinite ease-in-out;
+  transition: 0.3s cubic-bezier(0.55, 0.025, 0.675, 0.97);
+}
+#button:hover {
+  color: var(--fontColorHover);
+  background: rgb(255, 255, 255);
+  filter: drop-shadow(0 0 0.1px var(--neonColor));
+}
+
+#result-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  min-width: 321.80px;
+  height: 30%;
+  border-radius: 10px;
+  
+  border: 1px solid #ffff;
+  word-break: break-word;
+  
+}
+
+#result {
+  font-size: 50px;
+  opacity: 0.3;
+  
+}
+
+.wrapper-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    width: 98.5%;
+    height: 94%;
+    background: rgba(255, 255, 255, 0.404);
+
+}
+
+@keyframes backgroundWave {
+  0% {
+    background-position: 50% 100%;
+  }
+  50% {
+    background-position: 80% 100%;
+  }
+  100% {
+    background-position: 50% 100%;
+  }
+}
+
+
+@keyframes neon {
+   from{
+       filter: drop-shadow(0 0 0px var(--neonColor));
+   }
+   to{
+    filter: drop-shadow(4px 1px 5px var(--neonColor));
+   }
+
+}
