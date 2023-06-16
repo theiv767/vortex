@@ -1,9 +1,9 @@
 # vortex
 
-### desafios de estágio vortex
+### desafios propóstos pelo Vortex unifor
 
 ## desafio 1
-  - descrição: cria um conversor de números romanos para decimais
+  - descrição: criar um conversor de números romanos para decimais
   - linguagem:  javascript    
   - versão da linguagem:  mais atual  
   - caminho para os códigos: "vortex/desafiosVortex/desafio1/"  
